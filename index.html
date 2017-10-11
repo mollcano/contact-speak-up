@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Contact Speak Up</title>
+  </head>
+  <body>
+    <h1 class="big-title"><img src="./css/images/speakup_logo_hor.png" class="speakup"></h1>
+    <h4 class="subtitle">Build better public speaking skills through actionable data</h4>
+    <div class="buttonsCont"
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger stayInTouch" href="#modal1">Stay In Touch</a>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <div class="row">
+            <h4>Learn more about Speak Up and what we are up to</h4>
+            <form class="col s12" action="https://speak-up-backend.herokuapp.com/email_list" method="post" id="contact-form">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="first_name" name="first_name" type="text" class="validate" required>
+                  <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s12">
+                  <input id="last_name" name="last_name" type="text" class="validate" required>
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="email" name="email" type="email" class="validate" required>
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancel</a>
+                <button class="modal-action modal-close waves-effect waves-green btn-flat" type="submit" id="signUp">Sign Up</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <a class="waves-effect waves-light btn stayInTouch" href="mailto:hello@ispeakup.co">Contact Us</a>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
