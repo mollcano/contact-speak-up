@@ -1,5 +1,6 @@
 {
   "projects": {
-    "contact-speak-up": "contact-speak-up"
+    "contact-speak-up": "contact-speak-up",
+    "default": "speak-up-contact"
   }
 }
